@@ -1,5 +1,14 @@
-
-
+'''
+Obvious implementation
+# Time complexity: O(N^2)
+# Space complexity: O(1)
+'''
+class Solution(object):
+    def twoSum(self, nums, target):
+        for idx in range(len(nums)):
+            for idx2 in range(idx+1, len(nums)):
+                if nums[idx] + nums[idx2] == target:
+                    return [idx, idx2]
 
 
 '''
